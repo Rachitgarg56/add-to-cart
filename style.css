@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+#main-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding: 4rem;
+    gap: 2rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+#left ,#right {
+    border: 1px solid blue;
+}
+
+#left {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 4rem;
+    flex: 1.5;
+    border: 5px solid grey;
+    background-color: lightcyan;
+}
+
+tbody {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+tr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: lightblue;
+    color: green;
+    font-size: large;
+    font-weight: bold;
+    height: 3rem;
+    border-radius: 10px;
+    padding: 0 1rem;
+    gap: 2rem;
+}
+
+#left tr td:first-of-type {
+    white-space: nowrap;
+}
+
+#left tr div {
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    gap: 0.5rem;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+    flex: 1;
+}
+
+span {
+    text-align: center;
+    width: 20px;
+}
+
+
+/* --------------------------------------------------------- */
+
+#right {
+    position: relative;
+    flex: 1;
+    border: 5px solid grey;
+    background-color: lightcyan;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 4rem;
+    /* gap: 2rem; */
+}
+
+#right tbody {
+    align-items: center;
+}
+
+#right tbody tr {
+    justify-content: space-around;
+    width: 100%;
+}
+
+#right table tbody tr:last-of-type {
+    margin-bottom: 2rem;
+}
+
+#right tbody td {
+    white-space: nowrap;
+}
+
+#total {
+    position: absolute;
+    bottom: 1rem;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 767px) {
+    #main-container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    tr {
+        font-size: small;
+    }
+}
